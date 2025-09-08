@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu - Chef Xu Vevey 徐师傅</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f4ec;
+      color: #333;
+    }
+    header {
+      background: #b22222;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      border-bottom: 2px solid #b22222;
+      padding-bottom: 8px;
+      color: #b22222;
+      margin-top: 40px;
+    }
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px dashed #ccc;
+    }
+    .menu-item:last-child {
+      border-bottom: none;
+    }
+    .price {
+      color: #b22222;
+      font-weight: bold;
+    }
+    .back {
+      display: block;
+      margin: 40px auto;
+      text-align: center;
+      text-decoration: none;
+      background: #b22222;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      width: 200px;
+      transition: background 0.3s;
+    }
+    .back:hover {
+      background: #e63946;
+    }
+    footer {
+      background: #b22222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Menu Démonstration</h1>
+    <p>Chef Xu Vevey 徐师傅</p>
+  </header>
+
+  <section>
+    <h2>Entrées</h2>
+    <div class="menu-item"><span>Raviolis vapeur au porc</span><span class="price">CHF 9.-</span></div>
+    <div class="menu-item"><span>Soupe miso traditionnelle</span><span class="price">CHF 6.-</span></div>
+    <div class="menu-item"><span>Rouleaux de printemps</span><span class="price">CHF 8.-</span></div>
+
+    <h2>Plats principaux</h2>
+    <div class="menu-item"><span>Canard laqué à la pékinoise</span><span class="price">CHF 28.-</span></div>
+    <div class="menu-item"><span>Boeuf sauté au poivre noir</span><span class="price">CHF 24.-</span></div>
+    <div class="menu-item"><span>Nouilles sautées aux légumes</span><span class="price">CHF 18.-</span></div>
+
+    <h2>Desserts</h2>
+    <div class="menu-item"><span>Mochis assortis</span><span class="price">CHF 9.-</span></div>
+    <div class="menu-item"><span>Perles de coco</span><span class="price">CHF 7.-</span></div>
+
+    <h2>Boissons</h2>
+    <div class="menu-item"><span>Thé vert japonais</span><span class="price">CHF 5.-</span></div>
+    <div class="menu-item"><span>Saké chaud</span><span class="price">CHF 10.-</span></div>
+  </section>
+
+  <a class="back" href="index.html">⬅ Retour au site</a>
+
+  <footer>
+    <p>© 2025 Chef Xu Vevey 徐师傅 | Tous droits réservés</p>
+  </footer>
+</body>
+</html>
