@@ -4,160 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chef Xu Vevey 徐师傅</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f8f4ec;
-      color: #333;
-      scroll-behavior: smooth;
-    }
-    header {
-      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://lh3.googleusercontent.com/p/AF1QipMnsv20ivuLyfn3mPRGKkRvKSFr5d8SP8Pr_GAA=s680-w680-h510-rw');
-      background-size: cover;
-      background-position: center;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: white;
-      opacity: 0;
-      animation: fadeIn 2s ease forwards;
-    }
-    header h1 {
-      font-size: 3rem;
-      margin: 0;
-      color: #e63946;
-      transform: translateY(20px);
-      opacity: 0;
-      animation: slideUp 1.5s ease forwards 0.5s;
-    }
-    header p {
-      font-size: 1.5rem;
-      margin: 10px 0 0;
-      transform: translateY(20px);
-      opacity: 0;
-      animation: slideUp 1.5s ease forwards 1s;
-    }
-    nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: rgba(255, 255, 255, 0.95);
-      padding: 10px 20px;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      z-index: 10;
-    }
-    nav a {
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-    }
-    section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
-      opacity: 0;
-      transform: translateY(30px);
-      transition: opacity 1s ease, transform 1s ease;
-    }
-    section.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    .about, .gallery, .reservation, .contact, .menu {
-      margin-top: 40px;
-    }
-    h2 {
-      color: #b22222;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 15px;
-    }
-    .gallery-grid img {
-      width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-      transition: transform 0.3s ease;
-    }
-    .gallery-grid img:hover {
-      transform: scale(1.05);
-    }
-    .button {
-      display: inline-block;
-      background: #b22222;
-      color: white;
-      padding: 24px 40px;
-      border-radius: 80px;
-      text-decoration: none;
-      transition: background 0.3s;
-    }
-    .button:hover {
-      background: #e63946;
-    }
-    .about p {
-  text-align: center;
-  }
-
-   .menu p {
-  text-align: center;
-}
-  .menu {
-  text-align: center;
-}
-  .reservation p {
-  text-align: center;
-}
-  .reservation {
-  text-align: center;
-}
-
-    footer {
-      background: #b22222;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: 50px;
-      opacity: 0;
-      animation: fadeIn 2s ease forwards 1s;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-    @keyframes slideUp {
-      from { transform: translateY(20px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
-    }
-    @media (max-width: 768px) {
-  header h1 {
-    font-size: 2.2rem; /* réduit la taille du titre */
-  }
-  header p {
-    font-size: 1.2rem; /* réduit la taille du texte */
-  }
-  nav {
-    flex-direction: column; /* empile les liens */
-    gap: 10px; /* espace réduit entre les liens */
-    padding: 15px 10px;
-  }
-  .gallery-grid {
-    grid-template-columns: 1fr; /* 1 image par ligne */
-  }
-  section {
-    padding: 40px 15px; /* un peu moins de padding sur mobile */
-  }
-
-  </style>
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
   <nav>
@@ -175,10 +22,10 @@
 
   <section id="about" class="about">
     <h2>À propos</h2>
-    <p>Bienvenue chez <strong>Chef Xu Vevey 徐师傅</strong>, un lieu où tradition et authenticité se rencontrent. Découvrez l’art culinaire chinoi dans une ambiance raffinée et chaleureuse.</p>
+    <p>Bienvenue chez <strong>Chef Xu Vevey 徐师傅</strong>, un lieu où tradition et authenticité se rencontrent. Découvrez l’art culinaire chinois dans une ambiance raffinée et chaleureuse.</p>
   </section>
 
-<section id="menu" class="menu">
+  <section id="menu" class="menu">
     <h2>Menu</h2>
     <p>Plongez dans l’authenticité de la cuisine chinoise</p>
     <a class="button" href="menu.html">Découvrez notre menu</a>
@@ -196,7 +43,7 @@
   <section id="reservation" class="reservation">
     <h2>Réservations</h2>
     <p>Pour réserver une table, veuillez nous contacter directement par téléphone.</p>
-    <a class="button" href="tel:+021 922 11 66">📞 Appeler maintenant</a>
+    <a class="button" href="tel:+0219221166">📞 Appeler maintenant</a>
   </section>
 
   <section id="contact" class="contact">
@@ -209,18 +56,6 @@
     <p>© 2025 Chef Xu Vevey 徐师傅 | Tous droits réservés</p>
   </footer>
 
-  <script>
-    const sections = document.querySelectorAll('section');
-    const revealSection = () => {
-      sections.forEach(section => {
-        const rect = section.getBoundingClientRect();
-        if (rect.top < window.innerHeight - 100) {
-          section.classList.add('visible');
-        }
-      });
-    };
-    window.addEventListener('scroll', revealSection);
-    window.addEventListener('load', revealSection);
-  </script>
+  <script src="index.js"></script>
 </body>
 </html>
