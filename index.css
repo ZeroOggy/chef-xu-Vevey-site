@@ -1,0 +1,151 @@
+/* Reset et styles de base */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f4ec;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+header {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://lh3.googleusercontent.com/p/AF1QipMnsv20ivuLyfn3mPRGKkRvKSFr5d8SP8Pr_GAA=s680-w680-h510-rw');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  opacity: 1;
+  animation: fadeIn 2s ease forwards;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin: 0;
+  color: #e63946;
+  transform: translateY(20px);
+  opacity: 1;
+  animation: slideUp 1.5s ease forwards 0.5s;
+}
+
+header p {
+  font-size: 1.5rem;
+  margin: 10px 0 0;
+  transform: translateY(20px);
+  opacity: 1;
+  animation: slideUp 1.5s ease forwards 1s;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 10;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+h2 {
+  color: #b22222;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Galerie */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Boutons */
+.button {
+  display: inline-block;
+  background: #b22222;
+  color: white;
+  padding: 24px 40px;
+  border-radius: 80px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.button:hover {
+  background: #e63946;
+}
+
+/* Alignement textes */
+.about p, .menu p, .reservation p {
+  text-align: center;
+}
+
+.menu, .reservation {
+  text-align: center;
+}
+
+footer {
+  background: #b22222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 50px;
+  opacity: 1;
+  animation: fadeIn 2s ease forwards 1s;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header h1 { font-size: 2.2rem; }
+  header p { font-size: 1.2rem; }
+  nav { flex-direction: column; gap: 10px; padding: 15px 10px; }
+  .gallery-grid { grid-template-columns: 1fr; }
+  section { padding: 40px 15px; }
+}
